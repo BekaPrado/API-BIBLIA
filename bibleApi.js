@@ -19,14 +19,14 @@ async function buscarVersiculo() {
         sessionStorage.setItem('versiculo', JSON.stringify(data));
         window.location.href = 'resultado.html';
     } catch (error) {
-        alert('Erro ao buscar o versículo.');
+        alert('Digite um "livro capitulo:versiculo".');
     }
 }
 
 async function buscarVersiculoAleatorioLivro() {
     const livro = document.getElementById('livro').value.trim();
     if (!livro) {
-        alert('Digite um nome de livro válido!');
+        alert('Digite um nome de livro existente');
         return;
     }
     
@@ -50,7 +50,7 @@ async function buscarVersiculoAleatorioLivro() {
         };
 
         if (!totalCapitulos[livro]) {
-            alert("Nome do livro inválido. Tente novamente.");
+            alert("Nome do livro não encontrado.");
             return;
         }
 
