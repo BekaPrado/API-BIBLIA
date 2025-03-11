@@ -1,17 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background: url('image.png') no-repeat center center fixed;
+    background: url('fundo2.jpg') no-repeat center center fixed;
     background-size: cover;
     color: white;
-    background-image: url(fundo2.jpg);
 }
 
-h1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+img{
+    margin-top: 125px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 540px;
 }
+
+h3 {
+    font-family: 'Times New Roman';
+    font-size: 30px;
+}
+
 .container {
-    margin-top: 400px;
+    margin-top: 70px;
     background: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 40px;
@@ -42,6 +58,14 @@ button:hover {
 .voltar {
     display: block;
     margin-top: 20px;
-    color: white;
+    color: rgb(102, 51, 2);
+    text-decoration: none;
+}
+
+a {
+    color: rgb(124, 49, 6);
+    background-color: white;
+    padding: 10px;
+    border-radius: 40px;
     text-decoration: none;
 }
